@@ -1,7 +1,13 @@
 "use client";
 
 import Image from "next/image";
+import { Roboto_Mono } from "next/font/google";
 import { useWindowSize } from "@/hooks/use-window-size";
+
+const robotoMono = Roboto_Mono({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export default function AuthLayout({
   children,
@@ -12,7 +18,7 @@ export default function AuthLayout({
 
   return (
     <div 
-      className="fixed inset-0 grid lg:grid-cols-2"
+      className={`fixed inset-0 grid lg:grid-cols-2 ${robotoMono.className}`}
       style={{ height: `${height}px` }}
     >
       <div className="flex items-center justify-center px-4 sm:px-8 lg:px-16 overflow-hidden">

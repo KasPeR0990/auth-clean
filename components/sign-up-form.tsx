@@ -49,7 +49,7 @@ export function SignUpForm({
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <div className="flex flex-col gap-2">
-        <h1 className="text-2xl font-bold">Sign up</h1>
+        <h1 className="text-2xl font-bold relative inline-block pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-1/2 after:h-[2px] after:bg-foreground/20">Sign up</h1>
         <p className="text-sm text-muted-foreground/60">
           Create an account to get started
         </p>
