@@ -8,7 +8,7 @@ with preconfigured email/passowrd sign-up / sign-in.
 
 1.  clone the repo
     ```sh
-    git clone https://github.com/your_username/your_repository.git
+    git clone https://github.com/KasPeR0990/auth-clean.git
     ```
 2.  install NPM packages
     ```sh
