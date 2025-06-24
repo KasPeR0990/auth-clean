@@ -65,7 +65,10 @@ export function LoginForm({
             />
           </div>
           <div className="space-y-1">
-            <Label htmlFor="password">Password</Label>
+            <div className="flex items-center justify-between">
+              <Label htmlFor="password">Password</Label>
+           
+            </div>
             <Input
               id="password"
               placeholder="follow-me?"
@@ -78,6 +81,12 @@ export function LoginForm({
               value={password}
               onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
             />
+               <Link
+                href="/auth/forgot-password"
+                className="text-xs underline underline-offset-4 text-muted-foreground/60"
+              >
+                Forgot your password?
+              </Link>
           </div>
         </div>
         {error && <p className="text-sm text-red-500">{error}</p>}

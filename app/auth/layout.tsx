@@ -28,7 +28,7 @@ export default function AuthLayout({
       </div>
       <div className="hidden lg:block relative">
         <Image
-          src="/auth.jpg"
+          src="/auth-background.jpg"
           alt="Authentication background"
           fill
           quality={100}
